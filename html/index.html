@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Playing</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+    <header>
+        <img src="/img/logo-neq.png" alt="Serratec" id="image-serr">
+        <div class="container">
+            <h1>Cauculadora Serratec</h1>
+            <p>Cauculadora feita como teste para saber se eu realmente aprendi a utilizar HTML, Javascript e CSS</p>
+
+        </div>
+    </header>
+    <fieldset class="field">
+        <form class="cauculadora">
+
+            <input id="nota1" type="double"><br>
+
+            <div class="select-block">
+                <select name="operacao" id="operacao">
+                    <option value="0" disabled="" hidden="">Selecione uma operação</option>
+                    <option value="1"> + </option>
+                    <option value="2"> - </option>
+                    <option value="3"> * </option>
+                    <option value="4"> / </option>
+                </select>
+            </div><br>
+
+            <input id="nota2" type="double"><br>
+
+
+            <button class="caucular" type="button" onclick=""> = </button>
+            <!--<button class="caucular" type="button" onclick="somar()"> Somar </button><br>
+            <button class="caucular" type="button" onclick="subtrair()"> Subtrair </button><br>
+            <button class="caucular" type="button" onclick="multiplicar()"> Multiplicar </button><br>
+            <button class="caucular" type="button" onclick="dividir()"> Dividir </button><br> -->
+
+            <output id="res"></output>
+        </form>
+    </fieldset>
+
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
