@@ -50,5 +50,3 @@ function dividir() {
 
         }
 }
-
-document.getElementsByName("operacao")
