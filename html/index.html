@@ -4,46 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Just Playing</title>
+    <title>Cauculadora</title>
+    <link rel="icon" type="image/png" href="../img/logo.png" />
     <link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
-    <header>
-        <img src="/img/logo-neq.png" alt="Serratec" id="image-serr">
-        <div class="container">
+    <div class="cauculadora">
+        <header>
             <h1>Cauculadora Serratec</h1>
             <p>Cauculadora feita como teste para saber se eu realmente aprendi a utilizar HTML, Javascript e CSS</p>
+        </header>
+        <div class="body">
+            <input id="nota1" type="double" autocomplete="off">
 
-        </div>
-    </header>
-    <fieldset class="field">
-        <form class="cauculadora">
+            <input id="nota2" type="double" autocomplete="off">
 
-            <input id="nota1" type="double"><br>
-
-            <div class="select-block">
-                <select name="operacao" id="operacao">
-                    <option value="0" disabled="" hidden="">Selecione uma operação</option>
-                    <option value="1"> + </option>
-                    <option value="2"> - </option>
-                    <option value="3"> * </option>
-                    <option value="4"> / </option>
-                </select>
-            </div><br>
-
-            <input id="nota2" type="double"><br>
-
-
-            <!-- <button class="caucular" type="button" onclick=""> = </button> -->
-            <button class="caucular" type="button" onclick="somar()"> Somar </button><br>
-            <button class="caucular" type="button" onclick="subtrair()"> Subtrair </button><br>
-            <button class="caucular" type="button" onclick="multiplicar()"> Multiplicar </button><br>
-            <button class="caucular" type="button" onclick="dividir()"> Dividir </button><br>
+            <div class="botoes">
+                <button class="caucular" type="button" onclick="somar()"> Somar </button>
+                <button class="caucular" type="button" onclick="subtrair()"> Subtrair </button>
+                <button class="caucular" type="button" onclick="multiplicar()"> Multiplicar </button>
+                <button class="caucular" type="button" onclick="dividir()"> Dividir </button>
+            </div>
 
             <output id="res"></output>
-        </form>
-    </fieldset>
+        </div>
+    </div>
 
     <script src="/js/index.js"></script>
 </body>

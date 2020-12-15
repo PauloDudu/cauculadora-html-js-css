@@ -1,69 +1,57 @@
 :root {
-    background-color: #1c88c6;
-}
-
-.container h1 {
-    color: white   ;
-    display: block;
-    justify-content: center;
-}
-
-.container p {
-    color: white;
-}
-
-#nota1 {    
-    width: 20rem;
-    color: black;
-    background-color: whitesmoke;
-    text-decoration: none;
-    display:block;
-  
-}
-
-#nota2 {
-    width: 20rem;
-    color: black;
-    background-color: whitesmoke;
-    text-decoration: none;
-    display: block;
-  
-}
-
-#image-serr {
-    width: 25rem;
-}
-
-.caucular {
-    color:black;
-    background-color: rgb(210, 233, 219);
-    text-decoration: none;
-    width: 20rem;
-    display: block;
-    border-radius: .6rem;
-    cursor: pointer;
-}
-
-.value {
-    size: 3.2rem;
-    font-size: 1.4rem;
-}
-
-.field {
-    width: 20rem;
-    display: flex;
-    justify-content: center;
-    border-width: 2px;
-    border-color: rgb(199, 192, 231);
+    background-color: rgb(50, 159, 232);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .cauculadora {
+    padding: 40px;
+    border: 1px solid white;
+    margin: 100px 100px;
+
+}
+header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    color: white;
 }
 
-#res {
-    color: bisque;
-
+div.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+div.body input {
+    border: 0;
+    width: 30vw;
+    margin: 5px;
+    padding: 4px;
+    border-radius: 2px;
+    outline: none;
+    
+}
+
+button {
+    color: rgb(62, 101, 255);
+    background-color: white;
+    border: 0;
+    border-radius: 3px;
+    margin: 5px; 
+    padding: 4px;
+    width: 10vw;
+    transition: .3s;
+    outline: none;
+}
+
+button:hover {
+    background-color: rgb(62, 101, 255);
+    color:rgb(255, 255, 255)
+}
+
+output#res {
+    color: white;
+    font-size: 50px;
+}   
